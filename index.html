@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>To-do list</title>
+</head>
+
+<body>
+
+  <main class="app">
+    <img src="todo icon.png" alt="">
+    
+    <span id="element">
+      <h1>My ToDo List...</h1>
+    </span>
+    <div class="input-header">
+      <h1><span id="date"></span></h1>
+      
+      <div class="to-do-input">
+        <input type="text" id="item" placeholder="Put your task...">
+        <button id="enter"><b>Add</b></button>
+      </div>
+    </div>
+    
+    <div class="to-do-list"></div>
+  </main>
+<script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></Script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['My To-Do List'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/f7b78304be.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
